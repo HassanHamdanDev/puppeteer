@@ -4,7 +4,7 @@ const { getPDFhandler } = require('../controllers/pdfController');
 
 // router.param('id', checKID);
 
-router.route('/generate').get(getPDFhandler);
+router.route('/generate').post(getPDFhandler);
 
 
 module.exports = router;
